@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="skills"
+          android:id="@+id/nav_skills"
+          android:icon="@drawable/weightlifter"
+    />
+    <item android:title="harbor"
+          android:id="@+id/nav_harbor"
+          android:icon="@drawable/user"
+    />
+    <item
+            android:title="Add"
+            android:id="@+id/nav_add"
+            android:icon="@drawable/add"
+    />
+    <item android:title="balance"
+          android:id="@+id/nav_balance"
+          android:icon="@drawable/calculator"
+    />
+    <item android:title="calender"
+          android:id="@+id/nav_calender"
+          android:icon="@drawable/calendar"
+
+    />
+
+</menu>
