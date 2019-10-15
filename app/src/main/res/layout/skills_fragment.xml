@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp">
+
+
+    <TextView
+            android:text="Hello Chris !"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:textSize="40dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+    <TextView
+            android:text="Let's workout to get some gains!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/span_text"
+            android:layout_below="@+id/textView"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"/>
+    <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/user"
+            android:id="@+id/imageView"
+            android:layout_margin="25dp"
+            android:layout_alignParentEnd="true"/>
+    <Button
+            android:text="All Plans"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:id="@+id/button"
+            android:layout_below="@+id/span_text"
+            android:background="@drawable/custome_button"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:textAllCaps="false"/>
+    <Button
+            android:text="Bodyweight"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:id="@+id/button2"
+            android:layout_toRightOf="@+id/button"
+            android:layout_alignBaseline="@+id/button"
+            android:background="@drawable/custome_button"
+            android:textAllCaps="false"/>
+    <Button
+            android:text="Weights"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:id="@+id/button3"
+            android:layout_toRightOf="@+id/button2"
+            android:layout_alignBaseline="@+id/button"
+            android:background="@drawable/custome_button"
+            android:textAllCaps="false"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button"
+            android:layout_marginTop="10dp">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button"
+                android:id="@+id/linear"
+                android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linear"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/card_view1"
+            >
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/blue_gradient_background">
+                    <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_margin="20dp"
+                            android:id="@+id/im"
+                            app:srcCompat="@drawable/six"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="20dp"
+                            android:text="Technique Guides"
+                            android:id="@+id/tex"
+                            android:textSize="28dp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toRightOf="@+id/im"
+                    />
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@+id/im"
+                            android:layout_below="@+id/tex"
+                            android:layout_marginBottom="20dp"
+                            android:textColor="@android:color/white"
+                            android:text="Learn Amazing secrets workout and enhance your skills with us"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/card_view1"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/card_view2"
+            >
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ligth_blue_gradient_background">
+                    <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="20dp"
+                            android:id="@+id/im1"
+                            app:srcCompat="@drawable/six"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Technique Guides"
+                            android:id="@+id/tex1"
+                            android:textSize="28dp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" android:layout_alignParentStart="true"
+                            android:layout_toLeftOf="@+id/im1"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toLeftOf="@+id/im1"
+                            android:layout_below="@+id/tex1"
+                            android:layout_marginBottom="20dp"
+                            android:textColor="@android:color/white"
+                            android:text="Learn Amazing secrets workout and enhance your skills with us"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/card_view2"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/card_view3"
+            >
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/yellow_gradient_background">
+                    <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_margin="20dp"
+                            android:id="@+id/im2"
+                            app:srcCompat="@drawable/six"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="20dp"
+                            android:text="Technique Guides"
+                            android:id="@+id/tex2"
+                            android:textSize="28dp"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" android:layout_alignParentEnd="true"
+                            android:layout_toRightOf="@+id/im2"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_toRightOf="@+id/im2"
+                            android:layout_below="@+id/tex2"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@android:color/white"
+                            android:text="Learn Amazing secrets workout and enhance your skills with us"/>
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
