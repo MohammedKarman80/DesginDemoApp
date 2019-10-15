@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.nav_balance -> {
+
                 replaceFragment(SkillsFragment())
                 return@OnNavigationItemSelectedListener true
             }
