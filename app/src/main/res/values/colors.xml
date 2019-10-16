@@ -5,4 +5,7 @@
     <color name="colorAccent">#D81B60</color>
     <color name="gold">#ffab00</color>
     <color name="gray">#e0e0e0</color>
+    <color name="darkGreen">#004d40</color>
+    <color name="darkYellow">#ffff00</color>
+    <color name="ligthGray">#eeeeee</color>
 </resources>
