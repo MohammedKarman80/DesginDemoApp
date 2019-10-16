@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.nav_calender -> {
-                replaceFragment(SkillsFragment())
+                replaceFragment(CalenderFilterFragment())
                 return@OnNavigationItemSelectedListener true
             }
             R.id.nav_add -> {
