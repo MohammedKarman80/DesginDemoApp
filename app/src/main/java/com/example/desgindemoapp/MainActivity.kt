@@ -27,12 +27,12 @@ class MainActivity : AppCompatActivity() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.nav_harbor -> {
-                replaceFragment(SkillsFragment())
+                replaceFragment(HarborFragemnt())
                 return@OnNavigationItemSelectedListener true
             }
             R.id.nav_balance -> {
-
-                replaceFragment(BalanceFragment())
+                
+                replaceFragment(SkillsFragment())
                 return@OnNavigationItemSelectedListener true
             }
             R.id.nav_calender -> {
