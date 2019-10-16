@@ -34,34 +34,7 @@
             android:id="@+id/imageView"
             android:layout_margin="25dp"
             android:layout_alignParentEnd="true"/>
-    <Button
-            android:text="All Plans"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:id="@+id/button"
-            android:layout_below="@+id/span_text"
-            android:background="@drawable/custome_button"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="20dp"
-            android:textAllCaps="false"/>
-    <Button
-            android:text="Bodyweight"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:id="@+id/button2"
-            android:layout_toRightOf="@+id/button"
-            android:layout_alignBaseline="@+id/button"
-            android:background="@drawable/custome_button"
-            android:textAllCaps="false"/>
-    <Button
-            android:text="Weights"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
-            android:id="@+id/button3"
-            android:layout_toRightOf="@+id/button2"
-            android:layout_alignBaseline="@+id/button"
-            android:background="@drawable/custome_button"
-            android:textAllCaps="false"/>
+
     <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -216,6 +189,39 @@
 
         </LinearLayout>
     </ScrollView>
+    <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/span_text"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custome_button"
+            app:tabSelectedTextColor="@android:color/white"
+            android:id="@+id/button"
+            app:tabTextColor="@android:color/black"
+    >
+
+        <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Plans"
+
+                android:id="@+id/item1"/>
+
+        <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bodyweight"
+                android:id="@+id/item2"/>
+
+        <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:id="@+id/item3"
+        />
+    </android.support.design.widget.TabLayout>
 
 
 </RelativeLayout>
