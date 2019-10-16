@@ -2,11 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:title="skills"
           android:id="@+id/nav_skills"
-          android:icon="@drawable/weightlifter"
+        android:icon="@drawable/ic_weightlifter"
+
     />
     <item android:title="harbor"
           android:id="@+id/nav_harbor"
-          android:icon="@drawable/user"
+          android:icon="@drawable/ic_user"
     />
     <item
             android:title="Add"
@@ -20,7 +21,6 @@
     <item android:title="calender"
           android:id="@+id/nav_calender"
           android:icon="@drawable/calendar"
-
     />
 
 </menu>

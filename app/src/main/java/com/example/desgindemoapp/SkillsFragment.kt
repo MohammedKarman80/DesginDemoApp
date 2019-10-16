@@ -24,7 +24,7 @@ class SkillsFragment : Fragment(),View.OnClickListener {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view =inflater.inflate(R.layout.skills_fragment,container,false)
         var text :  String= view.span_text.text.toString()
-        val button1 : TabLayout = view.findViewById(R.id.button)
+
         view.span_text.setText( setBoldSpannable(text))
         view.card_view1.setOnClickListener(this)
         view.card_view2.setOnClickListener(this)

@@ -6,33 +6,38 @@
         android:background="@color/ligthGray">
     <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="180dp"
             android:id="@+id/balance_frame"
-            android:background="@color/darkGreen">
+            android:background="#0000"
+    >
         <RelativeLayout android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="150dp"
+                        android:background="@color/darkGreen">
 
             <ImageView android:layout_width="30dp"
                        android:layout_height="30dp"
-                       android:src="@drawable/ic_notifications_white_24dp"
                        android:layout_alignParentEnd="true"
                        android:layout_margin="10dp"
-                       android:id="@+id/notification_icon"/>
+                       android:id="@+id/notification_icon"
+                       android:src="@drawable/ic_notifications_white_24dp"/>
+            <!--
+            -->
 
             <ImageView android:layout_width="30dp"
                        android:layout_height="30dp"
-                       android:src="@drawable/ic_email_black_24dp"
                        android:layout_toLeftOf="@+id/notification_icon"
                        android:layout_marginTop="10dp"
-                       android:id="@+id/message_icon"/>
-
+                       android:id="@+id/message_icon"
+                       android:src="@drawable/ic_email_black_24dp"/>
+            <!--
+            -->
             <TextView android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:layout_centerHorizontal="true"
                       android:textColor="@android:color/white"
                       android:textSize="24dp"
                       android:text="Current Balance"
-                      android:layout_marginTop="50dp"
+                      android:layout_marginTop="30dp"
                       android:textStyle="bold"
                       android:id="@+id/current_bal_text"/>
 
@@ -49,6 +54,15 @@
 
 
         </RelativeLayout>
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_user"
+                android:layout_marginTop="60dp"
+                android:layout_centerHorizontal="true"
+
+        />
 
     </FrameLayout>
 
@@ -57,7 +71,7 @@
                   android:orientation="horizontal"
                   android:layout_below="@+id/balance_frame"
                   android:id="@+id/balance_linear_layout"
-                  android:layout_marginTop="45dp"
+                  android:layout_marginTop="35dp"
                   android:layout_marginLeft="25dp"
                   android:layout_marginRight="25dp"
                   android:layout_centerHorizontal="true"
@@ -72,10 +86,13 @@
                 <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/user"
                         android:layout_margin="10dp"
                         android:layout_gravity="center"
+                        android:src="@drawable/ic_user"
+                        android:background="@color/darkYellow"
                 />
+                <!--
+                -->
                 <TextView android:layout_width="wrap_content"
                           android:layout_height="wrap_content"
                           android:gravity="center"
@@ -99,10 +116,13 @@
                 <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/user"
                         android:layout_margin="10dp"
                         android:layout_gravity="center"
+                        android:src="@drawable/ic_user"
+                        android:background="@color/darkYellow"
                 />
+                <!--
+                -->
                 <TextView android:layout_width="wrap_content"
                           android:layout_height="wrap_content"
                           android:gravity="center"
@@ -124,10 +144,13 @@
                 <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/user"
                         android:layout_margin="10dp"
                         android:layout_gravity="center"
+                        android:src="@drawable/ic_user"
+                        android:background="@color/darkYellow"
                 />
+                <!--
+                -->
                 <TextView android:layout_width="wrap_content"
                           android:layout_height="wrap_content"
                           android:gravity="center"
@@ -147,13 +170,13 @@
               android:layout_height="wrap_content"
               android:text="Race TimeLine"
               android:textStyle="bold"
-              android:textSize="32dp"
+              android:textSize="26dp"
               android:textColor="@color/darkGreen"
               android:layout_below="@+id/balance_linear_layout"
               android:layout_centerHorizontal="true"
-              android:layout_marginTop="30dp"
+              android:layout_marginTop="20dp"
               android:id="@+id/race_text"
-              android:layout_marginBottom="30dp"/>
+              android:layout_marginBottom="20dp"/>
 
     <FrameLayout
             android:layout_width="match_parent"
@@ -162,48 +185,49 @@
             android:layout_marginRight="35dp"
             android:layout_marginLeft="35dp"
             android:background="@android:color/white">
-        <FrameLayout android:layout_width="match_parent"
-                     android:layout_height="match_parent"
+        <FrameLayout android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
                      android:layout_marginTop="10dp"
-                     android:layout_marginLeft="30dp"
-                     android:layout_marginRight="30dp"
+                     android:layout_gravity="center"
                      android:layout_marginBottom="50dp"
-                     android:background="@drawable/oval_shape">
+                     android:background="@drawable/oval_shape_large">
 
             <RelativeLayout android:layout_width="match_parent"
                             android:layout_height="match_parent"
-            >
+                            android:layout_gravity="center">
+
                 <FrameLayout android:layout_width="wrap_content"
                              android:layout_height="wrap_content"
-                android:background="@drawable/green_circle"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="25dp"
-                android:id="@+id/circle_frame">
+                             android:layout_centerHorizontal="true"
+                             android:id="@+id/circle_frame"
+                             android:background="@drawable/green_circle_small">
+                    <!--
+                    -->
                     <TextView android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:text="13:15"
-                    android:gravity="center"
-                    android:layout_gravity="center"/>
+                              android:textColor="@android:color/white"
+                              android:text="13:15"
+                              android:gravity="center"
+                              android:layout_gravity="center"/>
                 </FrameLayout>
                 <TextView android:layout_width="wrap_content"
                           android:layout_height="wrap_content"
-                android:layout_below="@+id/circle_frame"
-                android:layout_centerHorizontal="true"
-                android:textColor="@color/darkGreen"
-                android:layout_marginTop="10dp"
-                android:textSize="20dp"
-                android:text="Southwell"
-                android:textStyle="bold"
-                android:id="@+id/south_text"/>
+                          android:layout_below="@+id/circle_frame"
+                          android:layout_centerHorizontal="true"
+                          android:textColor="@color/darkGreen"
+                          android:layout_marginTop="5dp"
+                          android:textSize="18dp"
+                          android:text="Southwell"
+                          android:textStyle="bold"
+                          android:id="@+id/south_text"/>
                 <TextView android:layout_width="wrap_content"
                           android:layout_height="wrap_content"
                           android:layout_below="@+id/south_text"
                           android:layout_centerHorizontal="true"
-                          android:layout_marginTop="5dp"
-                          android:text="sounthbet.co.uk"
+                          android:layout_marginTop="2dp"
+                          android:text="sounthbet.co.uk awsome"
                           android:id="@+id/south_"
-                android:textColor="@android:color/black"/>
+                          android:textColor="@android:color/black"/>
 
                 <TextView android:layout_width="wrap_content"
                           android:layout_height="wrap_content"
@@ -211,7 +235,7 @@
                           android:layout_centerHorizontal="true"
                           android:layout_marginTop="10dp"
                           android:text="Monday,April,13"
-                          />
+                />
 
             </RelativeLayout>
 

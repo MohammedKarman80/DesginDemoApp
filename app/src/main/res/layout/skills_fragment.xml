@@ -30,11 +30,11 @@
     <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            app:srcCompat="@drawable/user"
             android:id="@+id/imageView"
             android:layout_margin="25dp"
             android:layout_alignParentEnd="true"/>
-
+<!--            app:srcCompat="@drawable/ic_user"
+-->
     <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -61,14 +61,20 @@
                 <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/blue_gradient_background">
+                        android:background="@drawable/blue_gradient_background"
+                >
+<!--
+-->
                     <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:layout_alignParentStart="true"
                             android:layout_margin="20dp"
                             android:id="@+id/im"
-                            app:srcCompat="@drawable/six"/>
+                            app:srcCompat="@drawable/ic_avatar"
+                    />
+<!--
+-->
                     <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -106,14 +112,20 @@
                 <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/ligth_blue_gradient_background">
+                        android:background="@drawable/ligth_blue_gradient_background"
+                >
+<!--
+-->
                     <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:layout_alignParentEnd="true"
                             android:layout_margin="20dp"
                             android:id="@+id/im1"
-                            app:srcCompat="@drawable/six"/>
+                            app:srcCompat="@drawable/ic_avatar"
+                    />
+<!--
+-->
                     <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -151,14 +163,20 @@
                 <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/yellow_gradient_background">
+                        android:background="@drawable/ic_ye_bk"
+                >
+<!--
+-->
                     <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:layout_alignParentStart="true"
                             android:layout_margin="20dp"
                             android:id="@+id/im2"
-                            app:srcCompat="@drawable/six"/>
+                            app:srcCompat="@drawable/ic_avatar"
+                    />
+<!--
+-->
                     <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -196,12 +214,14 @@
             android:layout_marginTop="30dp"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
-            app:tabBackground="@drawable/tablayout"
+            android:background="@drawable/custome_button"
+            app:tabIndicatorColor="#FFFF"
+            app:tabBackground="@drawable/mytablayout"
             app:tabSelectedTextColor="@android:color/white"
             android:id="@+id/button"
-            app:tabTextColor="@android:color/black"
-    >
-
+            app:tabTextColor="@android:color/black">
+<!--
+-->
         <android.support.design.widget.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

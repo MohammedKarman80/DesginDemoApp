@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
+
 <shape
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:shape="oval">
-
+    <stroke
+            android:width="2dp"
+            android:color="@color/darkGreen"/>
 
     <solid
-            android:color="@color/darkGreen"/>
-    <size android:width="60dp"
-          android:height="60dp"/>
+            android:color="#FFF"/>
+    <size android:width="200dp"
+          android:height="200dp"/>
 
     <!-- The value here should specify How much ovally you want shape be -->
 </shape>

@@ -18,15 +18,19 @@ android:layout_marginRight="10dp">
                       android:gravity="center"
                       android:orientation="vertical"
                       android:id="@+id/row_layout"
-                      android:background="@drawable/ligth_blue_gradient_background">
-
+                      android:background="@drawable/ligth_blue_gradient_background"
+        >
+<!--
+-->
             <ImageView android:layout_width="70dp"
-                       android:layout_height="50dp"
+                       android:layout_height="40dp"
                        android:layout_gravity="center"
-                       android:src="@drawable/six"
                        android:layout_margin="5dp"
                        android:id="@+id/row_image"
+                       android:src="@drawable/ic_avatar"
             />
+<!--
+-->
             <TextView android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:text="PushUp"

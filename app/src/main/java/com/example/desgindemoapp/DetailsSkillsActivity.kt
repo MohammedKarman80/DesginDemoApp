@@ -26,17 +26,17 @@ class DetailsSkillsActivity : AppCompatActivity() {
 
     fun glide(){
         Glide.with(this)
-            .load(R.drawable.six)
+            .load(R.drawable.ic_avatar)
             .apply(RequestOptions.circleCropTransform())
             .into(user_image)
 
         Glide.with(this)
-            .load(R.drawable.six)
+            .load(R.drawable.ic_avatar)
             .apply(RequestOptions.circleCropTransform())
             .into(user_image2)
 
         Glide.with(this)
-            .load(R.drawable.six)
+            .load(R.drawable.ic_avatar)
             .apply(RequestOptions.circleCropTransform())
             .into(user_image3)
 

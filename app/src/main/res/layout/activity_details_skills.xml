@@ -13,10 +13,13 @@
         <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="220dp"
-                app:srcCompat="@drawable/six"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="20dp"
+                app:srcCompat="@drawable/ic_avatar"
         />
+        <!--
+-->
+
     </FrameLayout>
     <TextView
             android:layout_width="wrap_content"
@@ -67,7 +70,8 @@
                android:layout_below="@+id/demo_text"
                android:src="@drawable/ic_comment_black_48dp"
     />
-
+    <!--
+    -->
     <TextView android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:layout_below="@+id/demo_text"
@@ -83,13 +87,14 @@
     <ImageView android:layout_width="30dp"
                android:layout_height="30dp"
                android:layout_below="@+id/demo_text"
-               android:src="@drawable/ic_thumb_up_black_48dp"
                android:layout_toRightOf="@+id/comment_text"
                android:id="@+id/like_icon"
                android:layout_marginLeft="5dp"
                android:layout_marginTop="10dp"
-               android:layout_marginRight="5dp"/>
-
+               android:layout_marginRight="5dp"
+               android:src="@drawable/ic_thumb_up_black_48dp"/>
+    <!--
+    -->
     <TextView android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:layout_below="@+id/demo_text"
@@ -104,33 +109,39 @@
     <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            app:srcCompat="@drawable/six"
             android:layout_below="@+id/demo_text"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="10dp"
 
             android:layout_marginRight="10dp"
             android:id="@+id/user_image"
+            app:srcCompat="@drawable/ic_avatar"
     />
+    <!--
+    -->
+
     <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            app:srcCompat="@drawable/six"
             android:layout_below="@+id/demo_text"
             android:layout_toLeftOf="@+id/user_image"
             android:layout_marginTop="10dp"
-
+            app:srcCompat="@drawable/ic_avatar"
             android:id="@+id/user_image2"
     />
+    <!--
+    -->
     <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            app:srcCompat="@drawable/six"
             android:layout_below="@+id/demo_text"
             android:layout_toLeftOf="@+id/user_image2"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="5dp"
-            android:id="@+id/user_image3"/>
+            android:id="@+id/user_image3"
+            app:srcCompat="@drawable/ic_avatar"/>
+    <!--
+    -->
     <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
@@ -157,6 +168,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:id="@+id/row_recycler"
+            android:layout_marginBottom="8dp"
     />
 
 

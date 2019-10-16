@@ -2,12 +2,12 @@ package com.example.desgindemoapp
 
 object Lists{
      var exList : MutableList<exercises> = mutableListOf(
-         exercises(R.drawable.ligth_blue_gradient_background,R.drawable.six),
-         exercises(R.drawable.yellow_gradient_background,R.drawable.user),
-         exercises(R.drawable.blue_gradient_background,R.drawable.six),
-         exercises(R.drawable.ligth_blue_gradient_background,R.drawable.user),
-         exercises(R.drawable.blue_gradient_background,R.drawable.six),
-         exercises(R.drawable.yellow_gradient_background,R.drawable.six)
+         exercises(R.drawable.ligth_blue_gradient_background,R.drawable.ic_avatar),
+         exercises(R.drawable.ic_ye_bk,R.drawable.ic_user),
+         exercises(R.drawable.blue_gradient_background,R.drawable.ic_avatar),
+         exercises(R.drawable.ligth_blue_gradient_background,R.drawable.ic_user),
+         exercises(R.drawable.blue_gradient_background,R.drawable.ic_avatar),
+         exercises(R.drawable.ic_ye_bk,R.drawable.ic_avatar)
 
      )
 
