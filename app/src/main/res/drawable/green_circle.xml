@@ -10,5 +10,7 @@
     <size android:width="60dp"
           android:height="60dp"/>
 
+
+
     <!-- The value here should specify How much ovally you want shape be -->
 </shape>
