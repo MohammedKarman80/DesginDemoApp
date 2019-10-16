@@ -32,10 +32,7 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.nav_balance -> {
 
-
-
-
-                replaceFragment(SkillsFragment())
+                replaceFragment(BalanceFragment())
                 return@OnNavigationItemSelectedListener true
             }
             R.id.nav_calender -> {
